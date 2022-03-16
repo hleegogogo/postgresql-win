@@ -28,6 +28,9 @@
     <Filter Include="src\include">
       <UniqueIdentifier>{ebae9b95-0934-4a12-8ff5-45075de45e38}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\backend\lib">
+      <UniqueIdentifier>{53999f4e-4d8d-4c1d-98f2-08f75104150a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pggin.h">
@@ -85,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="src\backend\access\gin\ginxlog.c">
       <Filter>src\backend\access\gin</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\rbtree.c">
+      <Filter>src\backend\lib</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

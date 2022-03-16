@@ -253,20 +253,20 @@ typedef int pid_t;
  * The struct stat is 32 bit in MSVC, so we redefine it as a copy of
  * struct __stat64.  This also fixes the struct size for MINGW builds.
  */
-struct stat						/* This should match struct __stat64 */
-{
-	_dev_t		st_dev;
-	_ino_t		st_ino;
-	unsigned short st_mode;
-	short		st_nlink;
-	short		st_uid;
-	short		st_gid;
-	_dev_t		st_rdev;
-	__int64		st_size;
-	__time64_t	st_atime;
-	__time64_t	st_mtime;
-	__time64_t	st_ctime;
-};
+//struct stat						/* This should match struct __stat64 */
+//{
+//	_dev_t		st_dev;
+//	_ino_t		st_ino;
+//	unsigned short st_mode;
+//	short		st_nlink;
+//	short		st_uid;
+//	short		st_gid;
+//	_dev_t		st_rdev;
+//	__int64		st_size;
+//	__time64_t	st_atime;
+//	__time64_t	st_mtime;
+//	__time64_t	st_ctime;
+//};
 
 extern int	_pgfstat64(int fileno, struct stat *buf);
 extern int	_pgstat64(const char *name, struct stat *buf);
