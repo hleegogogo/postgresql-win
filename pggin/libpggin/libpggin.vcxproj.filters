@@ -80,16 +80,34 @@
     <ClCompile Include="src\backend\access\gin\ginutil.c">
       <Filter>src\backend\access\gin</Filter>
     </ClCompile>
-    <ClCompile Include="src\backend\access\gin\ginvacuum.c">
-      <Filter>src\backend\access\gin</Filter>
-    </ClCompile>
-    <ClCompile Include="src\backend\access\gin\ginvalidate.c">
-      <Filter>src\backend\access\gin</Filter>
-    </ClCompile>
-    <ClCompile Include="src\backend\access\gin\ginxlog.c">
-      <Filter>src\backend\access\gin</Filter>
-    </ClCompile>
     <ClCompile Include="src\backend\lib\rbtree.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\binaryheap.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\bipartite_match.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\bloomfilter.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\dshash.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\hyperloglog.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\ilist.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\integerset.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\knapsack.c">
+      <Filter>src\backend\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backend\lib\pairingheap.c">
       <Filter>src\backend\lib</Filter>
     </ClCompile>
   </ItemGroup>

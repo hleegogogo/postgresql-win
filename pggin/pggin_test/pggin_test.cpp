@@ -673,11 +673,83 @@ test_rb_tree()
 	PG_RETURN_VOID();
 }
 
+//------------------------------------------------------------
+extern "C" {
+	void XLogBeginInsert(void)
+	{
+	}
+	void XLogSetRecordFlags(uint8 flags)
+	{
+	}
+	XLogRecPtr XLogInsert(RmgrId rmid, uint8 info)
+	{
+		return NULL;
+	}
+	void XLogEnsureRecordSpace(int max_block_id, int ndatas)
+	{
+	}
 
+	void XLogRegisterData(char* data, int len)
+	{
+	}
+
+	void XLogRegisterBuffer(uint8 block_id, Buffer buffer, uint8 flags)
+	{
+	}
+
+	void XLogRegisterBlock(uint8 block_id, RelFileNode* rnode,
+		ForkNumber forknum, BlockNumber blknum, char* page,
+		uint8 flags)
+	{
+	}
+
+	void XLogRegisterBufData(uint8 block_id, char* data, int len)
+	{
+	}
+
+	void XLogResetInsertion(void)
+	{
+	}
+
+	bool XLogCheckBufferNeedsBackup(Buffer buffer)
+	{
+		return false;
+	}
+
+	XLogRecPtr log_newpage(RelFileNode* rnode, ForkNumber forkNum,
+		BlockNumber blk, char* page, bool page_std)
+	{
+		return NULL;
+	}
+
+	void log_newpages(RelFileNode* rnode, ForkNumber forkNum, int num_pages,
+		BlockNumber* blknos, char** pages, bool page_std)
+	{
+
+	}
+	XLogRecPtr log_newpage_buffer(Buffer buffer, bool page_std)
+	{
+		return NULL;
+	}
+	void log_newpage_range(Relation rel, ForkNumber forkNum,
+		BlockNumber startblk, BlockNumber endblk, bool page_std)
+	{
+
+	}
+	XLogRecPtr XLogSaveBufferForHint(Buffer buffer, bool buffer_std)
+	{
+		return NULL;
+	}
+
+	void InitXLogInsert(void)
+	{
+	}
+}
 //------------------------------------------------------------------------------------
 
 int main()
 {
+	ginbuild(NULL, NULL, NULL);
     fnlibpggin();
 	test_ginpostinglist();
 	test_rb_tree();

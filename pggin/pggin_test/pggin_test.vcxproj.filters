@@ -18,5 +18,8 @@
     <ClCompile Include="pggin_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pggin_bufmgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

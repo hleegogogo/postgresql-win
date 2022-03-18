@@ -170,9 +170,15 @@
     <ClCompile Include="src\backend\access\gin\ginpostinglist.c" />
     <ClCompile Include="src\backend\access\gin\ginscan.c" />
     <ClCompile Include="src\backend\access\gin\ginutil.c" />
-    <ClCompile Include="src\backend\access\gin\ginvacuum.c" />
-    <ClCompile Include="src\backend\access\gin\ginvalidate.c" />
-    <ClCompile Include="src\backend\access\gin\ginxlog.c" />
+    <ClCompile Include="src\backend\lib\binaryheap.c" />
+    <ClCompile Include="src\backend\lib\bipartite_match.c" />
+    <ClCompile Include="src\backend\lib\bloomfilter.c" />
+    <ClCompile Include="src\backend\lib\dshash.c" />
+    <ClCompile Include="src\backend\lib\hyperloglog.c" />
+    <ClCompile Include="src\backend\lib\ilist.c" />
+    <ClCompile Include="src\backend\lib\integerset.c" />
+    <ClCompile Include="src\backend\lib\knapsack.c" />
+    <ClCompile Include="src\backend\lib\pairingheap.c" />
     <ClCompile Include="src\backend\lib\rbtree.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
